@@ -37,7 +37,7 @@
   </head>
 
   <body>
-
+    <!--顶部导航-->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -59,23 +59,22 @@
     </nav>
 
     <div class="container-fluid">
-      <div class="row">
-        <!-- 导航 -->
+        <!-- 侧边栏导航 -->
         <div class="col-sm-3 col-md-2 sidebar">
-          <ul id=“Tab” class="nav nav-sidebar">
-            <li class="active"><a href="#设置" data-toggle="tab">设置</a></li>
-            <li><a href="#系统信息" data-toggle="tab">系统信息</a></li>
-            <li><a href="#无线" data-toggle="tab">无线</a></li>
-            <li><a href="#" data-toggle="tab">内部网络</a></li>
-            <li><a href="#" data-toggle="tab">终端</a></li>
-            <li><a href="#" data-toggle="tab">上传</a></li>
-            <li><a href="#" data-toggle="tab">系统日志</a></li>
-          </ul>
+            <ul id=“Tab” class="nav nav-sidebar">
+                <li class="active"><a href="#设置" data-toggle="tab">设置</a></li>
+                <li><a href="#系统信息" data-toggle="tab">系统信息</a></li>
+                <li><a href="#无线" data-toggle="tab">无线</a></li>
+                <li><a href="#" data-toggle="tab">内部网络</a></li>
+                <li><a href="#" data-toggle="tab">终端</a></li>
+                <li><a href="#" data-toggle="tab">上传</a></li>
+                <li><a href="#" data-toggle="tab">系统日志</a></li>
+            </ul>
         </div>
-          
-        <div id="myTabContent" class="tab-content">
+
+        <div id="TabContent" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main tab-content">
             <!-- 设置主页面 -->
-            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main tab-pane fade in active" id="设置">
+            <div class="tab-pane fade in active" id="设置">
                 <h1 class="page-header">设置</h1>
                 <div id="container" class="container">
                     <div>
@@ -92,8 +91,8 @@
                 </div>
             </div>
             <!-- 网络设置tab -->
-            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main tab-pane fade" id="网络">
-                <h1 class="page-header">网络</h1>
+            <div class=" tab-pane fade" id="系统信息">
+                <h1 class="page-header">系统信息</h1>
                 <table class="table">
                     <tbody>
                         <tr>
@@ -109,11 +108,9 @@
                 <div class="pull-right">
                     <button class="btn btn-primary" id="myButtons" data-loading-text="Loading...">确定</button>
                     <button class="btn btn-primary">取消</button>
-                </div>    
-           </div>
+                </div>
+            </div>
         </div>
-
-      </div>
     </div>
 
     <!-- Bootstrap core JavaScript
